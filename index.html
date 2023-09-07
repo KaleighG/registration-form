@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table
+      class="bordered-table"
+      cellpadding="10"
+      border="4"
+      align="center"
+      width="600"
+      height="500"
+    >
+      <thead>
+        <tr>
+          <th
+            scope="col"
+            colspan="2"
+            style="color: rgb(255, 1, 1); font-size: 30px; font-weight: 700"
+            bgcolor="#fffcb3"
+          >
+            Registration Form
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row" rowspan="1" bgcolor="#1bc2fa">Enter Name</th>
+          <td bgcolor="#1bc2fa">
+            <input type="text" name="userName" />
+          </td>
+        </tr>
+        <tr>
+          <th scope="row" rowspan="1" bgcolor="#1bc2fa">Enter Password</th>
+          <td bgcolor="#1bc2fa">
+            <input type="text" name="userName" />
+          </td>
+        </tr>
+        <tr>
+          <th scope="row" rowspan="1" height="80" bgcolor="#1bc2fa">
+            Enter Address
+          </th>
+          <td bgcolor="#1bc2fa">
+            <textarea id="myTextarea" rows="4" cols="25"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <th bgcolor="#1bc2fa">Select Game</th>
+          <td bgcolor="#1bc2fa">
+            <form action="http://127.0.0.1:5500/registration_form.html">
+              <label style="font-weight: bold">
+                <input
+                  type="checkbox"
+                  name="game"
+                  style="accent-color: magenta"
+                  value="hockey"
+                />
+                Hockey
+                <br />
+                <input
+                  type="checkbox"
+                  name="game"
+                  style="accent-color: magenta"
+                  value="football"
+                />
+                Football
+                <br />
+                <input
+                  type="checkbox"
+                  name="game"
+                  style="accent-color: magenta"
+                  value="badminton"
+                />
+                Badminton
+                <br />
+                <input
+                  type="checkbox"
+                  name="game"
+                  style="accent-color: magenta"
+                  value="cricket"
+                />
+                Cricket
+                <br />
+                <input
+                  type="checkbox"
+                  name="game"
+                  style="accent-color: magenta"
+                  value="volleyball"
+                />
+                volleyball
+              </label>
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <th bgcolor="#1bc2fa">Gender</th>
+          <td bgcolor="#1bc2fa">
+            <form
+              action="http://127.0.0.1:5500/registration_form.html"
+              style="font-weight: 700"
+            >
+              <input
+                type="radio"
+                style="accent-color: magenta"
+                name="gender"
+                value="male"
+                checked="checked"
+              />
+              Male
+
+              <input
+                type="radio"
+                name="gender"
+                style="accent-color: magenta"
+                value="female"
+              />
+              Female
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <th bgcolor="#1bc2fa">Select ur age</th>
+          <td bgcolor="#1bc2fa">
+            <form action="http://127.0.0.1:5500/registration_form.html">
+              <input
+                type="number"
+                id="age"
+                placeholder="Select"
+                min="0"
+                max="120"
+                step="1"
+              />
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <th bgcolor="#1bc2fa">Select ur Photo</th>
+          <td bgcolor="#1bc2fa">
+            <form action="http://127.0.0.1:5500/registration_form.html">
+              <input type="file" name="urPhoto" />
+            </form>
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th scope="col" colspan="2" bgcolor="#1bc2fa">
+            <form action="http://127.0.0.1:5500/registration_form.html">
+              <input
+                type="button"
+                value="Click Me"
+                style="font-size: 18px; padding: 10px 20px"
+              />
+              <input
+                type="reset"
+                value="Reset"
+                style="font-size: 18px; padding: 10px 20px"
+              />
+              <input
+                type="submit"
+                value="Submit Form"
+                style="font-size: 18px; padding: 10px 20px"
+              />
+            </form>
+          </th>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
